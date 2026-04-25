@@ -1,0 +1,19 @@
+projects
+
+1. ModuLearn - https://github.com/LakraAnshul/ModuLearn
+description - ModuLearn is an AI-powered platform that creates personalized learning paths with interactive modules, chatbot support, coding practice, and auto-generated quizzes.
+live demo link - https://modulearn-9pq2.onrender.com/
+2. VoicePay - https://github.com/LakraAnshul/Voice-Pay
+description - VoicePay is an AI-powered payment system that allows users to make payments using voice commands. It uses advanced NLP and speech recognition to process payments securely and efficiently.
+live demo link - https://lakraanshul.github.io/Voice-Pay/
+3. Foof Flow - https://github.com/LakraAnshul/Food-Flow
+description - Food-Flow is a community-driven web platform that enables users to share and access surplus food, reducing waste through a seamless listing and booking system.
+live demo link - https://lakraanshul.github.io/FoodFlow/
+4. Smart Time Tracker – AI-Powered Worklog Automation - https://github.com/LakraAnshul/SUPERHACK
+description - Smart Time Tracker is an AI-powered system that automatically converts raw activity logs into accurate, billable timesheets and professional reports, eliminating manual work logging.
+live demo link - https://lakraanshul.github.io/SUPERHACK/
+5. M.A.R.G. - Machine-learning Assisted Road Guidance - https://github.com/LakraAnshul/MARG
+description - M.A.R.G. is an AI-powered traffic system that detects congestion and bottlenecks using computer vision.
+It helps optimize traffic flow and provides real-time insights for smarter traffic management.
+live demo link - https://marg-ai.streamlit.app/
+

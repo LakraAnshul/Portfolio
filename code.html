@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Anshul Lakra | Full Stack &amp; AI Engineer</title>
+    <meta content="Portfolio of Anshul Lakra - Full Stack Developer and AI Engineer building practical software systems." name="description"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        surface: "#131313",
+                        "on-surface": "#e4e2e1",
+                        "on-surface-variant": "#b9caca",
+                        "outline-variant": "#3a494a",
+                        "primary-container": "#00f5ff"
+                    },
+                    spacing: {
+                        gutter: "24px"
+                    },
+                    fontFamily: {
+                        display: ["Space Grotesk"],
+                        body: ["Inter"],
+                        mono: ["JetBrains Mono"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background: radial-gradient(circle at 85% -10%, rgba(0, 245, 255, 0.1), transparent 30%), #0d0d0d;
+            color: #e4e2e1;
+        }
+        ::selection {
+            background-color: #00f5ff;
+            color: #131313;
+        }
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%;
+        }
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 18s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary-container selection:text-surface">
+    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-zinc-800 bg-zinc-950/70 backdrop-blur-md">
+        <div class="max-w-[1440px] mx-auto h-20 px-6 md:px-16 flex items-center justify-between">
+            <a class="font-display font-bold text-xl tracking-tighter" href="#home">ANSHUL_LAKRA</a>
+            <button aria-label="Toggle menu" class="md:hidden border border-outline-variant px-3 py-2 font-mono text-sm uppercase" id="menuToggle" type="button">Menu</button>
+            <div class="hidden md:flex gap-8 items-center" id="desktopMenu">
+                <a class="font-mono uppercase tracking-widest text-sm text-cyan-400 border-b border-cyan-400 pb-1" href="#work">Work</a>
+                <a class="font-mono uppercase tracking-widest text-sm text-zinc-500 hover:text-cyan-400" href="#experience">Experience</a>
+                <a class="font-mono uppercase tracking-widest text-sm text-zinc-500 hover:text-cyan-400" href="#stack">Stack</a>
+                <a class="font-mono uppercase tracking-widest text-sm text-zinc-500 hover:text-cyan-400" href="#about">About</a>
+                <a class="font-mono uppercase tracking-widest text-sm text-zinc-500 hover:text-cyan-400" href="#contact">Contact</a>
+            </div>
+            <a class="hidden md:inline-block font-mono uppercase tracking-widest text-sm text-cyan-400 border border-cyan-400 px-4 py-2 hover:bg-cyan-400 hover:text-zinc-950 transition-colors" href="Anshul_Lakra_Resume.pdf" target="_blank">Resume</a>
+        </div>
+        <div class="hidden border-t border-zinc-800 px-6 py-4 md:hidden" id="mobileMenu">
+            <div class="flex flex-col gap-3">
+                <a class="font-mono uppercase tracking-widest text-sm text-zinc-300" href="#work">Work</a>
+                <a class="font-mono uppercase tracking-widest text-sm text-zinc-300" href="#experience">Experience</a>
+                <a class="font-mono uppercase tracking-widest text-sm text-zinc-300" href="#stack">Stack</a>
+                <a class="font-mono uppercase tracking-widest text-sm text-zinc-300" href="#about">About</a>
+                <a class="font-mono uppercase tracking-widest text-sm text-zinc-300" href="#contact">Contact</a>
+                <a class="font-mono uppercase tracking-widest text-sm text-cyan-400" href="Anshul_Lakra_Resume.pdf" target="_blank">Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="home">
+        <header class="min-h-screen pt-28 md:pt-24 flex flex-col justify-center px-6 md:px-16 max-w-[1440px] mx-auto relative">
+            <div class="max-w-4xl">
+                <p class="font-mono uppercase tracking-widest text-xs text-on-surface-variant mb-6">Full Stack Developer • AI Engineer • Ambikapur, India</p>
+                <h1 class="font-display text-[56px] md:text-[110px] leading-[0.95] tracking-[-0.04em]">
+                    <span class="block">I build</span>
+                    <span class="block text-primary-container scramble-text pb-2 md:pb-6"></span>
+                    <span class="block text-zinc-700">that scale.</span>
+                </h1>
+                <p class="font-body text-lg md:text-xl text-on-surface-variant mt-10 max-w-3xl leading-relaxed">
+                    I create AI-assisted software and robust web platforms with a focus on measurable outcomes: faster retrieval, cleaner automation, and reliable user workflows.
+                </p>
+                <div class="mt-10 flex flex-wrap gap-3">
+                    <a href="https://www.linkedin.com/in/anshullakra07/" target="_blank" class="flex items-center gap-2 px-3 py-2 border border-outline-variant font-mono text-xs uppercase hover:border-primary-container hover:text-primary-container transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/LakraAnshul" target="_blank" class="flex items-center gap-2 px-3 py-2 border border-outline-variant font-mono text-xs uppercase hover:border-primary-container hover:text-primary-container transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+
+        </header>
+
+        <section class="px-6 md:px-16 py-16 max-w-[1440px] mx-auto border-t border-outline-variant" id="work">
+            <div class="flex justify-between items-end mb-10">
+                <h2 class="font-display text-4xl md:text-5xl tracking-tight">SELECTED_PROJECTS</h2>
+                <span class="font-mono text-sm text-on-surface-variant">01-05</span>
+            </div>
+
+            <div class="flex flex-col gap-12 mt-8">
+                <!-- Project 01: ModuLearn -->
+                <div class="flex flex-col md:flex-row gap-8 border border-outline-variant p-6 hover:border-primary-container transition-colors group bg-zinc-950/30">
+                    <div class="md:w-1/2 overflow-hidden border border-outline-variant aspect-video">
+                        <img src="modulearn.png" alt="ModuLearn" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    </div>
+                    <div class="md:w-1/2 flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-col mb-4">
+                                <span class="font-mono text-sm text-primary-container mb-2">01</span>
+                                <h3 class="font-display text-3xl md:text-4xl">ModuLearn</h3>
+                            </div>
+                            <p class="font-body text-lg text-on-surface-variant leading-relaxed">
+                                ModuLearn is an AI-powered platform that creates personalized learning paths with interactive modules, chatbot support, coding practice, and auto-generated quizzes.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-4 mt-8">
+                            <a href="https://github.com/LakraAnshul/ModuLearn" target="_blank" class="font-mono text-xs uppercase tracking-widest border border-outline-variant px-4 py-2 hover:border-primary-container hover:text-primary-container transition-colors flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                GitHub
+                            </a>
+                            <a href="https://modulearn-9pq2.onrender.com/" target="_blank" class="font-mono text-xs uppercase tracking-widest border border-cyan-400 text-cyan-400 px-4 py-2 hover:bg-cyan-400 hover:text-zinc-950 transition-colors flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 02: VoicePay -->
+                <div class="flex flex-col md:flex-row-reverse gap-8 border border-outline-variant p-6 hover:border-primary-container transition-colors group bg-zinc-950/30">
+                    <div class="md:w-1/2 overflow-hidden border border-outline-variant aspect-video">
+                        <img src="voicepay.png" alt="VoicePay" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    </div>
+                    <div class="md:w-1/2 flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-col mb-4">
+                                <span class="font-mono text-sm text-primary-container mb-2">02</span>
+                                <h3 class="font-display text-3xl md:text-4xl">VoicePay</h3>
+                            </div>
+                            <p class="font-body text-lg text-on-surface-variant leading-relaxed">
+                                VoicePay is an AI-powered payment system that allows users to make payments using voice commands. It uses advanced NLP and speech recognition to process payments securely and efficiently.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-4 mt-8">
+                            <a href="https://github.com/LakraAnshul/Voice-Pay" target="_blank" class="font-mono text-xs uppercase tracking-widest border border-outline-variant px-4 py-2 hover:border-primary-container hover:text-primary-container transition-colors flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                GitHub
+                            </a>
+                            <a href="https://lakraanshul.github.io/Voice-Pay/" target="_blank" class="font-mono text-xs uppercase tracking-widest border border-cyan-400 text-cyan-400 px-4 py-2 hover:bg-cyan-400 hover:text-zinc-950 transition-colors flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 03: Food Flow -->
+                <div class="flex flex-col md:flex-row gap-8 border border-outline-variant p-6 hover:border-primary-container transition-colors group bg-zinc-950/30">
+                    <div class="md:w-1/2 overflow-hidden border border-outline-variant aspect-video">
+                        <img src="foodflow.png" alt="Food Flow" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    </div>
+                    <div class="md:w-1/2 flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-col mb-4">
+                                <span class="font-mono text-sm text-primary-container mb-2">03</span>
+                                <h3 class="font-display text-3xl md:text-4xl">Food Flow</h3>
+                            </div>
+                            <p class="font-body text-lg text-on-surface-variant leading-relaxed">
+                                Food-Flow is a community-driven web platform that enables users to share and access surplus food, reducing waste through a seamless listing and booking system.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-4 mt-8">
+                            <a href="https://github.com/LakraAnshul/Food-Flow" target="_blank" class="font-mono text-xs uppercase tracking-widest border border-outline-variant px-4 py-2 hover:border-primary-container hover:text-primary-container transition-colors flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                GitHub
+                            </a>
+                            <a href="https://lakraanshul.github.io/FoodFlow/" target="_blank" class="font-mono text-xs uppercase tracking-widest border border-cyan-400 text-cyan-400 px-4 py-2 hover:bg-cyan-400 hover:text-zinc-950 transition-colors flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 04: Smart Time Tracker -->
+                <div class="flex flex-col md:flex-row-reverse gap-8 border border-outline-variant p-6 hover:border-primary-container transition-colors group bg-zinc-950/30">
+                    <div class="md:w-1/2 overflow-hidden border border-outline-variant aspect-video">
+                        <img src="worklog_automation.png" alt="Smart Time Tracker" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    </div>
+                    <div class="md:w-1/2 flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-col mb-4">
+                                <span class="font-mono text-sm text-primary-container mb-2">04</span>
+                                <h3 class="font-display text-3xl md:text-4xl">Smart Time Tracker</h3>
+                            </div>
+                            <p class="font-body text-lg text-on-surface-variant leading-relaxed">
+                                Smart Time Tracker is an AI-powered system that automatically converts raw activity logs into accurate, billable timesheets and professional reports, eliminating manual work logging.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-4 mt-8">
+                            <a href="https://github.com/LakraAnshul/SUPERHACK" target="_blank" class="font-mono text-xs uppercase tracking-widest border border-outline-variant px-4 py-2 hover:border-primary-container hover:text-primary-container transition-colors flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                GitHub
+                            </a>
+                            <a href="https://lakraanshul.github.io/SUPERHACK/" target="_blank" class="font-mono text-xs uppercase tracking-widest border border-cyan-400 text-cyan-400 px-4 py-2 hover:bg-cyan-400 hover:text-zinc-950 transition-colors flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 05: M.A.R.G. -->
+                <div class="flex flex-col md:flex-row gap-8 border border-outline-variant p-6 hover:border-primary-container transition-colors group bg-zinc-950/30">
+                    <div class="md:w-1/2 overflow-hidden border border-outline-variant aspect-video">
+                        <img src="marg.png" alt="M.A.R.G." class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    </div>
+                    <div class="md:w-1/2 flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-col mb-4">
+                                <span class="font-mono text-sm text-primary-container mb-2">05</span>
+                                <h3 class="font-display text-3xl md:text-4xl">M.A.R.G.</h3>
+                            </div>
+                            <p class="font-body text-lg text-on-surface-variant leading-relaxed">
+                                M.A.R.G. is an AI-powered traffic system that detects congestion and bottlenecks using computer vision. It helps optimize traffic flow and provides real-time insights for smarter traffic management.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-4 mt-8">
+                            <a href="https://github.com/LakraAnshul/MARG" target="_blank" class="font-mono text-xs uppercase tracking-widest border border-outline-variant px-4 py-2 hover:border-primary-container hover:text-primary-container transition-colors flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                GitHub
+                            </a>
+                            <a href="https://marg-ai.streamlit.app/" target="_blank" class="font-mono text-xs uppercase tracking-widest border border-cyan-400 text-cyan-400 px-4 py-2 hover:bg-cyan-400 hover:text-zinc-950 transition-colors flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-6 md:px-16 py-16 max-w-[1440px] mx-auto border-t border-outline-variant" id="experience">
+            <div class="flex justify-between items-end mb-10">
+                <h2 class="font-display text-4xl md:text-5xl tracking-tight">EXPERIENCE</h2>
+                <span class="font-mono text-sm text-on-surface-variant">02 roles</span>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <article class="border border-outline-variant p-6">
+                    <p class="font-mono text-xs uppercase text-primary-container tracking-widest">Sep 2025 - Present</p>
+                    <h3 class="font-display text-2xl mt-3">Research and Development Intern</h3>
+                    <p class="font-body text-on-surface-variant mt-1">Samsung PRISM Research and Development Institute, Bangalore</p>
+                    <ul class="mt-4 space-y-3 text-on-surface-variant font-body">
+                        <li>Developed AI model workflows for visual guide generation.</li>
+                        <li>Integrated information from more than 10 knowledge sources.</li>
+                        <li>Built with Python, FastAPI, VectorDB, and RAG systems.</li>
+                    </ul>
+                </article>
+                <article class="border border-outline-variant p-6">
+                    <p class="font-mono text-xs uppercase text-primary-container tracking-widest">May 2025 - Aug 2025</p>
+                    <h3 class="font-display text-2xl mt-3">Software Developer Intern</h3>
+                    <p class="font-body text-on-surface-variant mt-1">Cyber Cell, Chhattisgarh Police Headquarters, Raipur</p>
+                    <ul class="mt-4 space-y-3 text-on-surface-variant font-body">
+                        <li>Automated data extraction from FIR reports through OCR.</li>
+                        <li>Achieved 90% scoring accuracy in report ranking workflows.</li>
+                        <li>Designed services for evaluating 750+ daily FIR records.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="px-6 md:px-16 py-16 max-w-[1440px] mx-auto border-t border-outline-variant" id="stack">
+            <div class="flex justify-between items-end mb-10">
+                <h2 class="font-display text-4xl md:text-5xl tracking-tight">STACK</h2>
+                <span class="font-mono text-sm text-on-surface-variant">Core capabilities</span>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="border border-outline-variant p-6">
+                    <h3 class="font-mono text-xs uppercase tracking-widest text-primary-container mb-4">Languages</h3>
+                    <p class="font-body text-on-surface-variant">Python, C, C++, JavaScript, SQL, HTML, CSS</p>
+                </div>
+                <div class="border border-outline-variant p-6">
+                    <h3 class="font-mono text-xs uppercase tracking-widest text-primary-container mb-4">Frameworks and Libraries</h3>
+                    <p class="font-body text-on-surface-variant">React, FastAPI, Node.js, Express, Flask</p>
+                </div>
+                <div class="border border-outline-variant p-6">
+                    <h3 class="font-mono text-xs uppercase tracking-widest text-primary-container mb-4">Databases and Cloud</h3>
+                    <p class="font-body text-on-surface-variant">MySQL, PostgreSQL, Firebase, Google Cloud Platform, Google Cloud Run</p>
+                </div>
+                <div class="border border-outline-variant p-6">
+                    <h3 class="font-mono text-xs uppercase tracking-widest text-primary-container mb-4">Tools</h3>
+                    <p class="font-body text-on-surface-variant">Git, GitHub, VS Code, Postman, Docker, Render</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-6 md:px-16 py-16 max-w-[1440px] mx-auto border-t border-outline-variant" id="about">
+            <div class="grid md:grid-cols-12 gap-6">
+                <div class="md:col-span-8">
+                    <h2 class="font-display text-4xl md:text-5xl tracking-tight">ABOUT</h2>
+                    <p class="font-body text-lg text-on-surface-variant leading-relaxed mt-6">
+                        I am a Computer Science student focused on building dependable software systems that combine AI intelligence with practical product design.
+                        My work spans backend APIs, machine-assisted data flows, and interfaces that support real users in high-volume workflows.
+                    </p>
+                    <p class="font-body text-lg text-on-surface-variant leading-relaxed mt-4">
+                        I enjoy solving engineering problems where data quality, system speed, and developer ergonomics matter equally.
+                    </p>
+                </div>
+                <aside class="md:col-span-4 border border-outline-variant p-6">
+                    <h3 class="font-mono text-xs uppercase tracking-widest text-primary-container">Education</h3>
+                    <p class="mt-4 font-display text-2xl">B.Tech in Computer Science</p>
+                    <p class="font-body text-on-surface-variant mt-2">Dr. SPM International Institute of Information Technology</p>
+                    <p class="font-body text-on-surface-variant mt-2">Aug 2023 - Present</p>
+                    <p class="font-mono text-xs uppercase mt-4 text-cyan-400">CGPA 8.0</p>
+                    <div class="mt-8 border-t border-outline-variant pt-4">
+                        <h4 class="font-mono text-xs uppercase tracking-widest text-primary-container">Leadership</h4>
+                        <p class="font-body text-on-surface-variant mt-3">Vice Secretary, Shutterbug Club</p>
+                        <p class="font-body text-on-surface-variant mt-2">Managed a 30-member media team and contributed to award-winning student media work.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="px-6 md:px-16 py-16 max-w-[1440px] mx-auto border-t border-outline-variant" id="contact">
+            <div class="grid md:grid-cols-12 gap-6">
+                <div class="md:col-span-6">
+                    <h2 class="font-display text-4xl md:text-5xl tracking-tight">CONTACT</h2>
+                    <p class="mt-6 font-body text-on-surface-variant">Open to internship opportunities, collaborations, and freelance engineering work.</p>
+                    <div class="mt-8 space-y-3 font-body">
+                        <p><span class="font-mono text-xs uppercase text-primary-container">Email:</span> <a class="text-on-surface-variant hover:text-primary-container" href="mailto:anshul23100@iiitnr.edu.in">anshul23100@iiitnr.edu.in</a></p>
+                        <p><span class="font-mono text-xs uppercase text-primary-container">Phone:</span> <a class="text-on-surface-variant hover:text-primary-container" href="tel:+916264653081">+91 62646 53081</a></p>
+                        <p><span class="font-mono text-xs uppercase text-primary-container">Location:</span> <span class="text-on-surface-variant">Ambikapur, India</span></p>
+                    </div>
+                    <div class="mt-8 flex gap-4">
+                        <a class="font-mono text-xs uppercase tracking-widest border border-outline-variant px-3 py-2 hover:border-primary-container hover:text-primary-container" href="https://github.com/anshullakra07" target="_blank">GitHub</a>
+                        <a class="font-mono text-xs uppercase tracking-widest border border-outline-variant px-3 py-2 hover:border-primary-container hover:text-primary-container" href="https://www.linkedin.com/in/lakraanshul" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="md:col-span-6 border border-outline-variant p-6">
+                    <h3 class="font-mono text-xs uppercase tracking-widest text-primary-container">Quick Message</h3>
+                    <form class="mt-5 space-y-4" id="contactForm">
+                        <input class="w-full rounded-none bg-transparent border border-outline-variant focus:border-primary-container focus:ring-0 font-body" id="senderName" name="senderName" placeholder="Your name" required type="text"/>
+                        <input class="w-full rounded-none bg-transparent border border-outline-variant focus:border-primary-container focus:ring-0 font-body" id="senderEmail" name="senderEmail" placeholder="Your email" required type="email"/>
+                        <textarea class="w-full rounded-none bg-transparent border border-outline-variant focus:border-primary-container focus:ring-0 font-body min-h-[140px]" id="message" name="message" placeholder="Tell me about your project" required></textarea>
+                        <button class="font-mono uppercase tracking-widest text-xs border border-cyan-400 text-cyan-400 px-4 py-2 hover:bg-cyan-400 hover:text-zinc-950 transition-colors" type="submit">Send via Email</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-zinc-950 border-t border-zinc-800 py-8 px-6 md:px-16">
+        <div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="font-mono text-[10px] uppercase tracking-wider text-zinc-600">© 2026 ANSHUL_LAKRA. All rights reserved.</p>
+            <p class="font-mono text-[10px] uppercase tracking-wider text-zinc-600">Built with HTML, TailwindCSS, and intent.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const mobileLinks = mobileMenu.querySelectorAll("a");
+        const contactForm = document.getElementById("contactForm");
+
+        menuToggle.addEventListener("click", function () {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        mobileLinks.forEach(function (link) {
+            link.addEventListener("click", function () {
+                mobileMenu.classList.add("hidden");
+            });
+        });
+
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            const senderName = document.getElementById("senderName").value.trim();
+            const senderEmail = document.getElementById("senderEmail").value.trim();
+            const message = document.getElementById("message").value.trim();
+            const subject = encodeURIComponent("Portfolio Contact from " + senderName);
+            const body = encodeURIComponent(
+                "Name: " + senderName + "\n" +
+                "Email: " + senderEmail + "\n\n" +
+                message
+            );
+            window.location.href = "mailto:anshul23100@iiitnr.edu.in?subject=" + subject + "&body=" + body;
+        });
+
+        // Text Scramble Effect
+        const phrases = ['systems.', 'products.', 'pipelines.'];
+        const scrambleEl = document.querySelector('.scramble-text');
+        
+        if (scrambleEl) {
+            let counter = 0;
+            scrambleEl.innerText = phrases[counter];
+            
+            const scrambleText = (element, newText, duration = 0.8, speed = 0.04) => {
+                return new Promise((resolve) => {
+                    const characterSet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                    const steps = duration / speed;
+                    let step = 0;
+                    
+                    const interval = setInterval(() => {
+                        let scrambled = '';
+                        const progress = step / steps;
+                        
+                        for (let i = 0; i < newText.length; i++) {
+                            if (newText[i] === ' ') {
+                                scrambled += ' ';
+                                continue;
+                            }
+                            
+                            if (progress * newText.length > i) {
+                                scrambled += newText[i];
+                            } else {
+                                scrambled += characterSet[Math.floor(Math.random() * characterSet.length)];
+                            }
+                        }
+                        
+                        element.innerText = scrambled;
+                        step++;
+                        
+                        if (step > steps) {
+                            clearInterval(interval);
+                            element.innerText = newText;
+                            resolve();
+                        }
+                    }, speed * 1000);
+                });
+            };
+
+            const nextPhrase = async () => {
+                counter = (counter + 1) % phrases.length;
+                await scrambleText(scrambleEl, phrases[counter]);
+                setTimeout(nextPhrase, 3000);
+            };
+
+            setTimeout(nextPhrase, 3000);
+        }
+    </script>
+</body>
+</html>
